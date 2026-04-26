@@ -7367,6 +7367,20 @@ footer {
     display: flex;
   }
 
+.nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 69px;
+    left: 0;
+    right: 0;
+    background: var(--dark);
+    padding: 32px;
+    gap: 24px;
+    border-bottom: 1px solid var(--border-gold);
+    z-index: 999;
+  }
+
   /* Hero */
   .hero {
     grid-template-columns: 1fr;
