@@ -1,531 +1,272 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Projects — StreetLight Creative Studios</title>
-
   <meta name="description" content="Browse the web design and development projects built by StreetLight Creative Studios — bold, beautiful, custom-coded websites for businesses in Ghana and beyond.">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
 
-
   <!-- ── NAVBAR ── -->
-
   <nav id="navbar">
-
     <div class="nav-logo" onclick="window.location.href='index.html'">
-
       <span class="logo-mark">✦</span>
-
       <div class="logo-text">
-
         <span class="logo-main">StreetLight Creative</span>
-
         <span class="logo-sub">Web Design & Development</span>
-
       </div>
-
     </div>
 
     <ul class="nav-links" id="nav-links">
-
       <li><a href="index.html">Home</a></li>
-
       <li><a href="about.html">About</a></li>
-
       <li><a href="project.html" class="active">Projects</a></li>
-
       <li><a href="contact.html">Contact</a></li>
-
     </ul>
 
     <a class="nav-cta" href="contact.html">Start a Project</a>
 
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-
       <span></span>
-
       <span></span>
-
       <span></span>
-
     </div>
-
   </nav>
 
 
   <!-- ── PAGE HERO ── -->
-
   <div class="page-hero">
-
     <p class="section-label">Our Work</p>
-
     <h1 class="page-hero-title">Projects we're<br><em>proud of.</em></h1>
-
     <p class="page-hero-sub">Every site below was hand-coded from scratch — no templates, no shortcuts.</p>
-
   </div>
 
 
   <!-- ── FILTER TABS ── -->
-
   <div class="filter-tabs">
-
     <button class="filter-tab active" onclick="filterProjects(this, 'all')">All Projects</button>
-
     <button class="filter-tab" onclick="filterProjects(this, 'restaurant')">Restaurant</button>
-
     <button class="filter-tab" onclick="filterProjects(this, 'engineering')">Engineering</button>
-
     <button class="filter-tab" onclick="filterProjects(this, 'creative')">Creative Studio</button>
-
     <button class="filter-tab" onclick="filterProjects(this, 'business')">Business</button>
-
   </div>
 
 
   <!-- ── PROJECTS GRID ── -->
-
-  <section class="featured-section">
-
+  <section class="featured-section" id="projects">
     <div class="featured-grid" id="projects-grid">
 
-
       <!-- PROJECT 1: The Cottage Kitchen -->
-
       <div class="project-card project-card--featured" data-category="restaurant">
-
         <div class="project-img-wrap">
-
           <img
-
             src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80"
-
             alt="The Cottage Kitchen Website"
-
           >
-
           <div class="project-overlay">
-
             <a
-
               href="https://streetlightcreativestudios.github.io/thecottagekitchen/"
-
               target="_blank"
-
               rel="noopener noreferrer"
-
               class="project-visit-btn"
-
             >
-
               Visit Live Site ↗
-
             </a>
-
           </div>
-
           <span class="project-live-tag">
-
             <span class="live-dot"></span> Live
-
           </span>
-
         </div>
-
         <div class="project-body">
-
           <div class="project-tags">
-
             <span class="project-tag">Restaurant</span>
-
             <span class="project-tag">5 Pages</span>
-
             <span class="project-tag">HTML / CSS / JS</span>
-
           </div>
-
           <h3>The Cottage Kitchen</h3>
-
-          <p>
-
-            A full 5-page restaurant website for a local and continental dining
-
-            experience in Accra. Features interactive menu tabs, a reservation
-
-            form with validation, a lightbox gallery, mobile hamburger navigation,
-
-            and a fully responsive layout across all devices.
-
-          </p>
-
+          <p>A full 5-page restaurant website for a local and continental dining experience in Accra. Features interactive menu tabs, a reservation form with validation, a lightbox gallery, mobile hamburger navigation, and a fully responsive layout across all devices.</p>
         </div>
-
       </div>
-
 
       <!-- PROJECT 2: BioCare Engineering Services -->
-
       <div class="project-card project-card--featured" data-category="engineering">
-
         <div class="project-img-wrap">
-
           <img
-
             src="https://biocareengineeringservices.com/assets/images/services/preventive-maintenance.jpg"
-
             alt="BioCare Engineering Services Website"
-
             onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80'"
-
           >
-
           <div class="project-overlay">
-
             <a
-
               href="https://biocareengineeringservices.com/"
-
               target="_blank"
-
               rel="noopener noreferrer"
-
               class="project-visit-btn"
-
             >
-
               Visit Live Site ↗
-
             </a>
-
           </div>
-
           <span class="project-live-tag">
-
             <span class="live-dot"></span> Live
-
           </span>
-
         </div>
-
         <div class="project-body">
-
           <div class="project-tags">
-
             <span class="project-tag">Engineering</span>
-
             <span class="project-tag">6 Pages</span>
-
             <span class="project-tag">HTML / CSS / JS</span>
-
           </div>
-
           <h3>BioCare Engineering Services</h3>
-
-          <p>
-
-            A modern, professional website for a biomedical equipment repair
-
-            and maintenance company. Built to showcase their expertise, services,
-
-            and projects with a clean and authoritative design that instils
-
-            confidence in potential clients.
-
-          </p>
-
+          <p>A modern, professional website for a biomedical equipment repair and maintenance company. Built to showcase their expertise, services, and projects with a clean and authoritative design that instils confidence in potential clients.</p>
         </div>
-
       </div>
-
 
       <!-- PROJECT 3: StreetLight Studios -->
-
       <div class="project-card project-card--featured" data-category="creative">
-
         <div class="project-img-wrap">
-
           <img
-
             src="https://streetlightcreativestudios.github.io/streetlightstudios/images/photography/event-2.jpg"
-
             alt="StreetLight Studios Website"
-
             onerror="this.src='https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=900&q=80'"
-
           >
-
           <div class="project-overlay">
-
             <a
-
               href="https://streetlightcreativestudios.github.io/streetlightstudios/"
-
               target="_blank"
-
               rel="noopener noreferrer"
-
               class="project-visit-btn"
-
             >
-
               Visit Live Site ↗
-
             </a>
-
           </div>
-
           <span class="project-live-tag">
-
             <span class="live-dot"></span> Live
-
           </span>
-
         </div>
-
         <div class="project-body">
-
           <div class="project-tags">
-
             <span class="project-tag">Creative Studio</span>
-
             <span class="project-tag">6 Pages</span>
-
             <span class="project-tag">HTML / CSS / JS</span>
-
           </div>
-
           <h3>StreetLight Studios</h3>
-
-          <p>
-
-            A bold, cinematic website for a photography, content creation,
-
-            podcasting, and music studio. Designed to reflect the studio's
-
-            creative identity with a premium dark aesthetic, rich visuals,
-
-            and a clean professional presentation.
-
-          </p>
-
+          <p>A bold, cinematic website for a photography, content creation, podcasting, and music studio. Designed to reflect the studio's creative identity with a premium dark aesthetic, rich visuals, and a clean professional presentation.</p>
         </div>
-
       </div>
 
-
       <!-- COMING SOON CARDS -->
-
       <div class="project-card project-card--soon" data-category="business">
-
         <div class="soon-inner">
-
           <span class="soon-glyph">✦</span>
-
-          <p class="soon-label">Business Website</p>
-
+          <p class="soon-label">Next Project</p>
           <p class="soon-desc">Coming soon — currently in development.</p>
-
         </div>
-
       </div>
 
       <div class="project-card project-card--soon" data-category="restaurant">
-
         <div class="soon-inner">
-
           <span class="soon-glyph">✦</span>
-
-          <p class="soon-label">Restaurant Website</p>
-
+          <p class="soon-label">Next Project</p>
           <p class="soon-desc">Coming soon — currently in development.</p>
-
         </div>
-
       </div>
 
       <div class="project-card project-card--soon" data-category="business">
-
         <div class="soon-inner">
-
           <span class="soon-glyph">✦</span>
-
-          <p class="soon-label">Business Website</p>
-
+          <p class="soon-label">Next Project</p>
           <p class="soon-desc">Coming soon — currently in development.</p>
-
         </div>
-
       </div>
 
-
     </div>
-
   </section>
 
 
   <!-- ── PROCESS REMINDER ── -->
-
   <section class="proj-process">
-
     <div class="proj-process-inner">
-
       <p class="section-label">How It Works</p>
-
       <h2 class="section-title">Your website,<br>built <em>the right way.</em></h2>
-
       <p class="about-para">
-
         Every project you see above started with a conversation.
-
         No lengthy contracts, no confusing briefs — just a clear
-
         discussion about your business and what you need online.
-
         From there, I handle everything.
-
       </p>
-
       <a href="contact.html" class="btn-primary">Start Your Project</a>
-
     </div>
-
   </section>
 
 
   <!-- ── CTA ── -->
-
   <section class="cta-section">
-
     <div class="cta-inner">
-
       <p class="section-label section-label--center">Your Project Could Be Next</p>
-
       <h2 class="cta-title">
-
         Want a website<br>
-
         <em>like these?</em>
-
       </h2>
-
       <p class="cta-sub">
-
         Let's talk about what you need. I'll build you something
-
         you're genuinely proud to share.
-
       </p>
-
       <div class="cta-buttons">
-
         <a class="btn-primary" href="contact.html">Start a Project</a>
-
         <a class="whatsapp-btn" href="https://wa.me/233207918365" target="_blank" rel="noopener noreferrer">
-
           <span>💬</span> Chat on WhatsApp
-
         </a>
-
       </div>
-
     </div>
-
   </section>
 
 
   <!-- ── FOOTER ── -->
-
   <footer>
-
     <div class="footer-top">
-
       <div class="footer-brand">
-
         <div class="footer-brand-name">
-
           <span class="footer-mark">✦</span> StreetLight Creative Studios
-
         </div>
-
         <p class="footer-desc">
-
           Illuminating your brand online — bold, beautiful websites
-
           built for businesses ready to grow.
-
         </p>
-
       </div>
 
       <div class="footer-col">
-
         <h4>Navigate</h4>
-
         <ul>
-
           <li><a href="index.html">Home</a></li>
-
           <li><a href="about.html">About</a></li>
-
           <li><a href="project.html">Projects</a></li>
-
           <li><a href="contact.html">Contact</a></li>
-
         </ul>
-
       </div>
 
       <div class="footer-col">
-
         <h4>Get in Touch</h4>
-
         <ul>
-
           <li><a href="https://wa.me/233207918365" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-
-          <li><a href="mailto:streetlightcreativestudios@gmail.com">Email Us</a></li>
-
+          <li><a href="mailto:hello@streetlightcreativestudios.com">Email Us</a></li>
           <li><a href="#">Instagram</a></li>
-
           <li><a href="#">Facebook</a></li>
-
         </ul>
-
       </div>
-
     </div>
 
     <div class="footer-bottom">
-
       <span>© 2025 StreetLight Creative Studios. All rights reserved.</span>
-
       <span>Built with ✦ in Accra, Ghana</span>
-
     </div>
-
   </footer>
-
 
   <script src="js/main.js"></script>
 
-
 </body>
-
 </html>
