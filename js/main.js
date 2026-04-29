@@ -43,7 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
 // ── PROJECT FILTER (projects.html) ──
 function filterProjects(btn, category) {
   // Update active tab
